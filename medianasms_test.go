@@ -108,7 +108,7 @@ func TestSendPattern(t *testing.T) {
 }
 
 func TestGetCredit(t *testing.T) {
-	sms := New("fyhwuRWBn6cf-6eMO90JjDmIrq2KarEnmva1Vs-TcZE=")
+	sms := New("API-KEY")
 
 	credit, err := sms.GetCredit()
 	if err != nil {
