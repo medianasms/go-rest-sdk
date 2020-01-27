@@ -106,3 +106,14 @@ func TestSendPattern(t *testing.T) {
 
 	t.Log(bulkID)
 }
+
+func TestGetCredit(t *testing.T) {
+	sms := New("fyhwuRWBn6cf-6eMO90JjDmIrq2KarEnmva1Vs-TcZE=")
+
+	credit, err := sms.GetCredit()
+	if err != nil {
+		t.Error("error occurred ", err)
+	}
+
+	t.Log(credit)
+}
