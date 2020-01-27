@@ -19,7 +19,6 @@ const (
 	ClientVersion = "1.0.1"
 
 	// Endpoint points you to MedianaSMS REST API.
-	// Endpoint = "https://rest.medianasms.com/v1"
 	Endpoint = "http://rest.medianasms.com/v1"
 
 	// httpClientTimeout is used to limit http.Client waiting time.
