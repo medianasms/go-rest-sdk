@@ -83,8 +83,6 @@ func (sms MedianaSMS) request(method string, uri string, params map[string]strin
 		return nil, err
 	}
 
-	fmt.Println(string(responseBody))
-
 	switch res.StatusCode {
 	case http.StatusOK, http.StatusCreated:
 		_res := &BaseResponse{}
