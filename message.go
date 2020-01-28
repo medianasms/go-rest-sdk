@@ -122,6 +122,10 @@ type createPatternReqType struct {
 	IsShared bool   `json:"is_shared"`
 }
 
+type createPatternResType struct {
+	Pattern *Pattern `json:"pattern"`
+}
+
 // sendPatternReqType send sms with pattern request template
 type sendPatternReqType struct {
 	PatternCode string            `json:"pattern_code"`
@@ -214,12 +218,12 @@ func (sms *MedianaSMS) CreatePattern(pattern string, isShared bool) (*Pattern, e
 		return nil, err
 	}
 
-	res := &Pattern{}
+	res := &createPatternResType{}
 	if err = json.Unmarshal(_res.Data, res); err != nil {
 		return nil, err
 	}
 
-	return res, nil
+	return res.Pattern, nil
 }
 
 // SendPattern send a message with pattern
