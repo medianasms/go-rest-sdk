@@ -53,8 +53,10 @@ const (
 	ErrDocumentsNotApproved ResponseCode = "10021"
 	// ErrInternal internal error
 	ErrInternal ResponseCode = "10022"
-	// ErrNumberIsNotAvailable internal error
-	ErrNumberIsNotAvailable ResponseCode = "10023"
+	// ErrEntityNotFound internal error
+	ErrEntityNotFound ResponseCode = "10023"
+	// ErrForbidden internal error
+	ErrForbidden ResponseCode = "10024"
 	// ErrUnprocessableEntity inputs have some problems
 	ErrUnprocessableEntity ResponseCode = "422"
 	// ErrUnauthorized unauthorized
