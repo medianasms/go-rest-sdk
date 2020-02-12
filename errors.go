@@ -15,20 +15,20 @@ const (
 	ErrMessageBodyIsEmpty ResponseCode = "10002"
 	// ErrUserLimitted user is limited
 	ErrUserLimitted ResponseCode = "10003"
-	// ErrLineNotAssignedToYou line not assigned to you
-	ErrLineNotAssignedToYou ResponseCode = "10004"
+	// ErrNumberNotAssignedToYou line not assigned to you
+	ErrNumberNotAssignedToYou ResponseCode = "10004"
 	// ErrRecipientsEmpty recipients is empty
 	ErrRecipientsEmpty ResponseCode = "10005"
 	// ErrCreditNotEnough credit not enough
 	ErrCreditNotEnough ResponseCode = "10006"
-	// ErrLineNotProfitForBulkSend line not profit for bulk send
-	ErrLineNotProfitForBulkSend ResponseCode = "10007"
-	// ErrLineDeactiveTemp line deactivated temporally
-	ErrLineDeactiveTemp ResponseCode = "10008"
+	// ErrNumberNotProfitForBulkSend line not profit for bulk send
+	ErrNumberNotProfitForBulkSend ResponseCode = "10007"
+	// ErrNumberDeactiveTemp line deactivated temporally
+	ErrNumberDeactiveTemp ResponseCode = "10008"
 	// ErrMaximumRecipientExceeded maximum recipients number exceeded
 	ErrMaximumRecipientExceeded ResponseCode = "10009"
-	// ErrOperatorOffline operator is offline
-	ErrOperatorOffline ResponseCode = "10010"
+	// ErrGatewayOffline gateway is offline
+	ErrGatewayOffline ResponseCode = "10010"
 	// ErrNoPricing pricing not defined for user
 	ErrNoPricing ResponseCode = "10011"
 	// ErrTicketIsInvalid ticket is invalid
@@ -43,20 +43,17 @@ const (
 	ErrPatternIsInactive ResponseCode = "10016"
 	// ErrPatternRecipientInvalid pattern recipient invalid
 	ErrPatternRecipientInvalid ResponseCode = "10017"
-	// ErrPatternUnAuthorizedSend unauthorized send with pattern
-	ErrPatternUnAuthorizedSend ResponseCode = "10018"
 	// ErrItsTimeToSleep send time is 8-23
 	ErrItsTimeToSleep ResponseCode = "10019"
-	// ErrCreditCardNotProvided credit card not provided
-	ErrCreditCardNotProvided ResponseCode = "10020"
 	// ErrDocumentsNotApproved one/all of users documents not approved
 	ErrDocumentsNotApproved ResponseCode = "10021"
 	// ErrInternal internal error
 	ErrInternal ResponseCode = "10022"
-	// ErrEntityNotFound internal error
-	ErrEntityNotFound ResponseCode = "10023"
-	// ErrForbidden internal error
-	ErrForbidden ResponseCode = "10024"
+	// ErrNumberNotFound provided number not valid
+	ErrNumberNotFound ResponseCode = "10023"
+	// ErrGatewayDisabled gateway disabled
+	ErrGatewayDisabled ResponseCode = "10024"
+
 	// ErrUnprocessableEntity inputs have some problems
 	ErrUnprocessableEntity ResponseCode = "422"
 	// ErrUnauthorized unauthorized
